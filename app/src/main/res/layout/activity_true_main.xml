@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_true_title"
+        android:id="@+id/top"/>
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.rh.artlive.view.CircleImageView
+                android:id="@+id/roundImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/home"
+                />
+
+            <TextView
+                android:id="@+id/true_name"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/roundImageView"
+                android:text="学校到哪看到加号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.example.rh.artlive.view.PullToRefreshLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/setting"
+        android:id="@+id/network_pager_myAuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.rh.artlive.view.LoadRecyclerView
+            android:id="@+id/network_myLoad"
+            android:background="@color/background_gray1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/load_more" />
+
+    </com.example.rh.artlive.view.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:background="@color/white_text"
+        android:id="@+id/setting"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/bottom_left_content"
+            android:id="@+id/button"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="强力解锁超级会员服务"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

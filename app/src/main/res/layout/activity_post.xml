@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_post"
+        android:id="@+id/top"/>
+
+
+    <com.example.rh.artlive.richtext.RichTextEditor
+        android:id="@+id/richEditor"
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/title"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff" />
+
+
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/button1"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/art_picture"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

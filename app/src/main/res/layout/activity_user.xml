@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_user" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/done"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_header"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <com.example.rh.artlive.view.CircleImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/roundImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/home"
+            />
+        <!--<ImageView-->
+            <!--android:id="@+id/me_item_lottery_iv_arrow_right"-->
+            <!--style="@style/me_common_item_arrow_right_imageView_style" />-->
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dtwo"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="用户名"
+            android:background="@null"
+            android:textColor="#2fa881"
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+             />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dthird"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_sex"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/user_sex"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="21dp"
+            android:text="性别"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:layout_marginStart="21dp" />
+
+        <TextView
+            android:id="@+id/sex_value"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="女"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dfour"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_art"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="21dp"
+            android:text="艺考方向"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:layout_marginStart="21dp" />
+
+        <TextView
+            android:id="@+id/boxin_value"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="播音"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dfive"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_gradle"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="年级"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/student_value"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="大学生"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dsix"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_study"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="培训经历"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/activity_value"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="已参加过艺考培训"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dseven"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_save"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="省份"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/user_city"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="北京市"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/deiter"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_point"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="目标院校"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/target_school"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            android:text="中国传媒大学"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dnine"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_school"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/point"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="文化分"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="文化分"
+            android:textColor="#2fa881"
+            android:id="@+id/user_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:id="@+id/dten"
+        android:background="@color/white_text"
+        android:layout_below="@+id/reboundScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:gravity="center"
+            android:src="@mipmap/mine_school"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/name"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="学校"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="学校"
+            android:textColor="#2fa881"
+            android:id="@+id/user_school"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+            />
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

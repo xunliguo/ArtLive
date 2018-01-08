@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_header_match_sign"
+        android:id="@+id/top"/>
+
+
+            <RelativeLayout
+                android:id="@+id/sign_header"
+                android:layout_below="@+id/top"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:text="报名资料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/done"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_text"
+                android:layout_below="@+id/sign_header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:hint="姓名"
+                    android:textColor="#2fa881"
+                    android:id="@+id/sign_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="true"
+                     />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/done"
+                android:background="@color/white_text"
+                android:layout_below="@+id/reboundScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="手机"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:hint="请填写手机号"
+                    android:textColor="#2fa881"
+                    android:id="@+id/sign_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/sex"
+                android:background="@color/white_text"
+                android:layout_below="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="性别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/sex_value"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="请点击选择性别"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/done"
+                android:background="@color/white_text"
+                android:layout_below="@+id/reboundScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="年龄"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+                <EditText
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:hint="请填写年龄"
+                    android:textColor="#2fa881"
+                    android:id="@+id/sign_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/done"
+                android:background="@color/white_text"
+                android:layout_below="@+id/reboundScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="指导教师"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:hint="请填写指导老师"
+                    android:textColor="#2fa881"
+                    android:id="@+id/sign_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/done"
+                android:background="@color/white_text"
+                android:layout_below="@+id/reboundScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="通信地址"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:hint="请填写通信地址"
+                    android:textColor="#2fa881"
+                    android:id="@+id/sign_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/selector_bg_edit"
+                    android:textCursorDrawable="@drawable/bg_input_cursor"
+                    android:paddingBottom="2dp"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/done"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/done"
+                android:background="@color/white_text"
+                android:layout_below="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textColor="@color/orange"
+                    android:id="@+id/sign_price"
+                    android:text="50"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+                <TextView
+                    android:layout_toRightOf="@+id/sign_price"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="报名费"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@color/white_text"
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/button"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="下一步"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

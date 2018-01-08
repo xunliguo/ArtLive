@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_colleges_maim"
+        android:id="@+id/top"/>
+
+    <ScrollView
+        android:layout_below="@+id/top"
+        android:layout_above="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/colleges_header"
+                android:background="@drawable/colleges_back"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                >
+
+                <com.example.rh.artlive.view.CircleImageView
+                    android:id="@+id/colleges_logo"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/worm_people"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/colleges_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="北京大学"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/colleges_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/colleges_name"
+                    android:id="@+id/colleges_address"
+                    android:layout_marginLeft="10dp"
+                    android:text="北京大"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/colleges_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/colleges_value"
+                    android:layout_below="@+id/colleges_name"
+                    android:layout_marginLeft="10dp"
+                    android:text="北京大学"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/colleges_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/colleges_address"
+                    android:id="@+id/colleges_class"
+                    android:layout_marginLeft="10dp"
+                    android:text="北京大学"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/colleges_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colleges_collect"
+                android:background="@color/white"
+                android:layout_below="@+id/colleges_header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/colleges_point"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="文化分43242342434"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/colleges_point"
+                    android:id="@+id/colleges_record"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="录取批次43242342434"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_below="@+id/colleges_record"
+                    android:id="@+id/colleges_count_people"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="找去reshuffle43242342434"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_below="@+id/colleges_point"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/login_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_unlogin"
+                    android:text="收藏"
+                    android:textColor="@color/white_text" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/colleges_query"
+                android:layout_below="@+id/colleges_collect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="2017艺考成绩查询"
+                    android:textColor="@color/orange" />
+
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/query_one"
+                android:layout_below="@+id/colleges_query"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:id="@+id/name1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="czczczxczxczxczxczczxczxczxcczxczxczxczxczxczxczxczx"
+                    />
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/query_one"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/query_two"
+                android:layout_below="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:id="@+id/name2"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="czczczxczxczxczxczczxczxczxcczxczxczxczxczxczxczxczx"
+                    />
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/query_two"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/query_third"
+                android:layout_below="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:id="@+id/name3"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="czczczxczxczxczxczczxczxczxcczxczxczxczxczxczxczxczx"
+                    />
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view2"
+                android:layout_below="@+id/query_third"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/query_four"
+                android:layout_below="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                    android:id="@+id/name4"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="czczczxczxczxczxczczxczxczxcczxczxczxczxczxczxczxczx"
+                    />
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/colleges_details"
+                android:layout_below="@+id/query_four"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="2017专业详情"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/colleges_details"
+                android:id="@+id/click_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/colleges_details_video"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="播音"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/colleges_video_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:background="@color/white_back"
+                        android:id="@+id/rv_sort"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cp_shadow"/>
+
+            <RelativeLayout
+                android:id="@+id/colleges_details_biandao"
+                android:layout_below="@+id/colleges_details_video"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="编导"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/colleges_details_perform"
+                android:layout_below="@+id/colleges_details_biandao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="编导"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+            android:id="@+id/colleges_information"
+            android:layout_below="@+id/click_list"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="学校信息  "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colleges_jianjie"
+                android:layout_below="@+id/colleges_information"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="学校简介"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+            android:id="@+id/view9"
+            android:layout_below="@+id/colleges_jianjie"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+            <RelativeLayout
+                android:id="@+id/colleges_information_address"
+                android:layout_below="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="地址："
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/information_address_value"
+                    android:layout_toRightOf="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view8"
+                android:layout_below="@+id/colleges_information_address"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+
+            <RelativeLayout
+                android:id="@+id/colleges_information_net"
+                android:layout_below="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="网址："
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/information_address_value"
+                    android:layout_toRightOf="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view7"
+                android:layout_below="@+id/colleges_information_net"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+
+            <RelativeLayout
+                android:id="@+id/colleges_information_phone"
+                android:layout_below="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话："
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/information_address_value"
+                    android:layout_toRightOf="@+id/information_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="地址"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colleges_hospital"
+                android:layout_below="@+id/colleges_information_phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="历届招生简章  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/colleges_hospital_one"
+                android:layout_below="@+id/colleges_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_below="@+id/colleges_hospital_one"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_hospital_two"
+                android:layout_below="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view5"
+                android:layout_below="@+id/colleges_hospital_two"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_hospital_third"
+                android:layout_below="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view4"
+                android:layout_below="@+id/colleges_hospital_third"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_hospital_four"
+                android:layout_below="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/view3"
+                android:layout_below="@+id/colleges_hospital_four"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_hospital_more"
+                android:layout_below="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="查看更多"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colleges_reference"
+                android:layout_below="@+id/colleges_hospital_more"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="历届参考分数线"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colleges_reference_one"
+                android:layout_below="@+id/colleges_reference"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewa"
+                android:layout_below="@+id/colleges_reference_one"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_reference_two"
+                android:layout_below="@+id/viewa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/viewb"
+                android:layout_below="@+id/colleges_reference_two"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_reference_third"
+                android:layout_below="@+id/viewb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewc"
+                android:layout_below="@+id/colleges_reference_third"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_reference_four"
+                android:layout_below="@+id/viewc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="电话"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/me_item_lottery_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+            <View
+                android:id="@+id/viewd"
+                android:layout_below="@+id/colleges_reference_four"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/cp_shadow"/>
+            <RelativeLayout
+                android:id="@+id/colleges_reference_more"
+                android:layout_below="@+id/viewd"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white_text">
+
+                <TextView
+                    android:id="@+id/colleges_hospital_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="查看更多"
+                     />
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+
+    <RelativeLayout
+        android:background="@color/white_text"
+        android:id="@+id/setting"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:id="@+id/login_btn_one"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_unlogin"
+            android:text="我要许愿"
+            android:textColor="@color/white_text" />
+
+        <Button
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/login_btn_two"
+            android:layout_toRightOf="@+id/login_btn_one"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_unlogin"
+            android:text="校考指导"
+            android:textColor="@color/white_text" />
+
+        <Button
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/login_btn_two"
+            android:id="@+id/login_btn_third"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_unlogin"
+            android:text="我有问题"
+            android:textColor="@color/white_text" />
+        <Button
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/login_btn_third"
+            android:id="@+id/login_btn_four"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_unlogin"
+            android:text="考试行程"
+            android:textColor="@color/white_text" />
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_perview"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="150dp">
+
+       <ImageView
+           android:id="@+id/pre_image"
+           android:src="@mipmap/mine_photo"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/pre_title"
+            android:text="标题"
+            android:autoLink="web"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/per_one"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="web"
+            android:id="@+id/pre_content_one"
+            android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pre_image_one"
+            android:src="@mipmap/main_add"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/per_two"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="web"
+            android:id="@+id/pre_content_two"
+            android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pre_image_two"
+            android:src="@mipmap/main_add"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/per_third"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="web"
+            android:visibility="gone"
+            android:id="@+id/pre_content_third"
+            android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pre_image_third"
+            android:src="@mipmap/main_add"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/per_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="web"
+            android:visibility="gone"
+            android:id="@+id/pre_content_four"
+            android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pre_image_four"
+            android:src="@mipmap/main_add"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/per_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:autoLink="web"
+            android:visibility="gone"
+            android:id="@+id/pre_content_five"
+            android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pre_image_five"
+            android:src="@mipmap/main_add"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

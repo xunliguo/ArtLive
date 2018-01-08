@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_article_details"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/pre_title"
+                    android:text="标题"
+                    android:autoLink="web"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/art_time"
+                    android:text="时间"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/art_reading"
+                    android:layout_toLeftOf="@+id/art_share"
+                    android:text="时间"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/art_share"
+                    android:text="阅读33次时间"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/art_header_view"
+                    android:text="导语"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/per_one"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="web"
+                    android:id="@+id/pre_content_one"
+                    android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/pre_image_one"
+                    android:src="@mipmap/main_add"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/per_two"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="web"
+                    android:id="@+id/pre_content_two"
+                    android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/pre_image_two"
+                    android:src="@mipmap/main_add"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/per_third"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="web"
+                    android:visibility="gone"
+                    android:id="@+id/pre_content_third"
+                    android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/pre_image_third"
+                    android:src="@mipmap/main_add"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/per_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="web"
+                    android:visibility="gone"
+                    android:id="@+id/pre_content_four"
+                    android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/pre_image_four"
+                    android:src="@mipmap/main_add"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/per_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:autoLink="web"
+                    android:visibility="gone"
+                    android:id="@+id/pre_content_five"
+                    android:text="dfsdfsdfsdfsdfsdfsdfsdsaddddsadasdasdsaddasasddsaasdasdasdsasadasdasdasdadadadasdassadasdasdasdasdasdasdasasdasdsadasdasddsaddasdasdasdffsdfsdfsdfsdfs"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/pre_image_five"
+                    android:src="@mipmap/main_add"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

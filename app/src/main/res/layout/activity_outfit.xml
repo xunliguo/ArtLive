@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_header_outfit"/>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_below="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/around_supplier_list_product"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/around_supplier_list_tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="专业"
+                android:textSize="16dp"/>
+            <ImageView
+                android:id="@+id/down_back"
+                android:layout_width="@dimen/around_supplier_list_image_width"
+                android:layout_height="@dimen/around_supplier_list_image_height"
+                android:src="@mipmap/icon_arrow_down"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/around_supplier_list_sort"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/around_supplier_list_tv_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="所在地"
+                android:textSize="16dp"/>
+            <ImageView
+                android:layout_width="@dimen/around_supplier_list_image_width"
+                android:layout_height="@dimen/around_supplier_list_image_height"
+                android:src="@mipmap/icon_arrow_down"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/around_supplier_list_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/around_supplier_list_tv_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="排序"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="@dimen/around_supplier_list_image_width"
+                android:layout_height="@dimen/around_supplier_list_image_height"
+                android:src="@mipmap/icon_arrow_down" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/around_view_style"/>
+
+    <com.example.rh.artlive.view.PullToRefreshLayout
+        android:id="@+id/network_pager_myAuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.rh.artlive.view.LoadRecyclerView
+            android:id="@+id/network_myLoad"
+            android:visibility="visible"
+            android:background="@color/background_gray1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/load_more" />
+
+    </com.example.rh.artlive.view.PullToRefreshLayout>
+
+</LinearLayout>

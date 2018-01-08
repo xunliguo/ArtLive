@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:banner="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:background="@color/cp_shadow"
+        android:theme="@style/MainAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/bar_down"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="330dp">
+
+    <include layout="@layout/layout_header_menu"
+        android:id="@+id/worm_top"/>
+
+    <LinearLayout
+        android:id="@+id/advert"
+        android:background="@color/white_text"
+        android:layout_below="@+id/worm_top"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+            <!--android:src="@mipmap/worm_topic"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+
+        <com.example.rh.artlive.view.SimpleImageBanner
+            android:id="@+id/worm_banner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            banner:bb_indicatorGravity="RIGHT"
+            banner:bb_scale="1.4"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_below="@+id/advert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_quai_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_topic"
+                android:text="话题" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_people"
+                android:text="找人" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_live"
+                android:text="直播" />
+            <TextView
+                android:id="@+id/me_user_tv_favorite1"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_show"
+                android:text="活动展示" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history2"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_report"
+                android:text="录制稿件" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_wen"
+                android:text="文常" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite5"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_export"
+                android:text="专家师范" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history5"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_teacher"
+                android:text="老师" />
+            <TextView
+                android:id="@+id/me_user_tv_favorite3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_outfit"
+                android:text="机构" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/worm_tree"
+                android:text="许愿树" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab"
+        android:layout_below="@+id/top"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginTop="4dp"
+            android:id="@+id/image"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/worm_back"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:id="@+id/image2"
+            android:src="@mipmap/pull_icon_big"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <android.support.design.widget.TabLayout
+            app:layout_scrollFlags="scroll"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toLeftOf="@+id/image2"
+            android:id="@+id/network_tabLayout"
+            android:background="@color/white_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tabSelectedTextColor="@color/yellow_back"
+            app:tabIndicatorColor="@color/yellow_back"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+    </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.rh.artlive.view.CustomViewPager
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/buju"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="27"
+            android:textSize="50dp"
+            android:id="@+id/key_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/key_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp"
+                android:text="测试22"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/price"
+                    android:text="单价：  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/priceValue"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_art"
+                android:text="文章" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_carm"
+                android:text="拍摄" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_comm"
+                android:text="点评" />
+            <TextView
+                android:id="@+id/me_user_tv_history2"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_topic"
+                android:text="话题" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart3"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_live"
+                android:text="直播" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite3"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_post"
+                android:text="发帖" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history5"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_point"
+                android:text="评分" />
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/me_user_tv_history3"
+                style="@style/me_userLayout_dialog_style"
+                android:drawableTop="@mipmap/add_class"
+                android:text="课程" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/top_image"-->
+        <!--android:layout_marginTop="30dip"-->
+        <!--android:layout_marginLeft="10dip"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/user_icon_favorite"/>-->
+    <!--<TextView-->
+        <!--android:layout_marginTop="20dip"-->
+        <!--android:layout_below="@+id/top_image"-->
+        <!--android:layout_marginLeft="30dip"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#333333"-->
+        <!--android:lineSpacingMultiplier="1.5"-->
+        <!--android:text="如果不是相互喜欢\n你的痴情就是别人的负担"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="25dip"-->
+        <!--android:layout_marginRight="25dip"-->
+        <!--android:gravity="bottom"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test1"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="210dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="说说"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test2"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="210dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="照片"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test3"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="210dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="视频"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test4"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="210dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="直播"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="25dip"-->
+        <!--android:layout_marginRight="25dip"-->
+        <!--android:gravity="bottom"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test5"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="120dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="乱搞"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test6"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="120dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="动感照片"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test7"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="120dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="日志"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/test8"-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="120dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="50dip"-->
+                <!--android:layout_height="50dip"-->
+                <!--android:src="@mipmap/user_icon_favorite" />-->
+
+            <!--<TextView-->
+                <!--android:layout_marginTop="10dip"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="语音"-->
+                <!--android:textColor="#333333"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_click"
+        android:layout_width="wrap_content"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/bootom_add_click" />
+
+        <ImageView
+            android:id="@+id/pop_iv_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_click"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

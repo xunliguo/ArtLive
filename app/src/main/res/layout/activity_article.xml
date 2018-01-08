@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_article"
+        android:id="@+id/top"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/top"
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/art_add"
+            android:src="@drawable/art_add"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@mipmap/back"
+            android:id="@+id/art_iamge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/down"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:hint="标题"
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/selector_bg_edit"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lead"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/cp_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/lead_view"
+            android:text="dadasdasdasd"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.example.rh.artlive.richtext.RichTextEditor
+        android:id="@+id/richEditor"
+        android:layout_marginTop="20dp"
+        android:autoLink="web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_marginLeft="40dp"
+            android:id="@+id/button1"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:src="@mipmap/art_picture"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/button2"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/art_net"
+            android:gravity="center_horizontal" />
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/button3"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/art_header"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/button4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/art_picture"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+    <!-- 富文本编辑器 -->
+
+</RelativeLayout>

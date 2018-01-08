@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/buju"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <TextView
+            android:text="27"
+            android:textSize="50dp"
+            android:id="@+id/key_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/key_url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp"
+                android:text="测试22"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/price"
+                    android:text="单价：  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/priceValue"
+                    android:textColor="@color/red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_quai_bg"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_lashouquan"
+                android:text="文章" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_favorite"
+                android:text="拍摄" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_history"
+                android:text="点评" />
+            <TextView
+                android:id="@+id/me_user_tv_history2"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_history"
+                android:text="话题" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/me_user_tv_cart3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_lashouquan"
+                android:text="直播" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_favorite3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_favorite"
+                android:text="发帖" />
+
+
+            <TextView
+                android:id="@+id/me_user_tv_history5"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_history"
+                android:text="评分" />
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/me_user_tv_history3"
+                style="@style/me_userLayout_textView_style"
+                android:drawableTop="@mipmap/user_icon_history"
+                android:text="话题" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

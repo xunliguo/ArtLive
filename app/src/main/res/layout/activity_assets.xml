@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_assets"/>
+
+    <LinearLayout
+        android:id="@+id/me_nologin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.rh.artlive.view.CircleImageView
+                android:id="@+id/roundImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/roundImageView"
+                android:text="二线潜力股"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/sex"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/roundImageView"
+                android:text="女" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:text="请选择交易面额"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:id="@+id/left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/art_money"
+                    android:text="1虫币"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/art_rmb"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/art_money"
+                    android:text="1元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moddle"
+                android:layout_toRightOf="@+id/left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/art_money1"
+                    android:text="10虫币"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/art_rmb1"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/art_money1"
+                    android:text="10元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/right"
+                android:layout_toRightOf="@+id/moddle"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/art_money2"
+                    android:text="30虫币"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/art_rmb2"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/art_money2"
+                    android:text="30元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:id="@+id/left1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/art_money3"
+                    android:text="50虫币"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/art_rmb3"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/art_money3"
+                    android:text="50元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/moddle1"
+                android:layout_toRightOf="@+id/left1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/art_money4"
+                    android:text="100虫币"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/art_rmb4"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_below="@+id/art_money4"
+                    android:text="100元"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/right1"
+                android:layout_toRightOf="@+id/moddle1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/layout_biankuang"
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:id="@+id/art_more"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/art_money5"
+                        android:text="1虫币"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/art_rmb5"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:layout_below="@+id/art_money5"
+                        android:text="1元"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/art_more_view"
+                    android:text="其他金额"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:text="请选择交易方式"
+                android:textSize="13dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <RelativeLayout
+            android:id="@+id/ass_aply"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_biankuang"
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/art_money"
+                android:gravity="center"
+                android:src="@mipmap/ass_aply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/aply_view"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/art_money"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="支付宝"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ass_wechat"
+            android:layout_toRightOf="@+id/ass_aply"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/layout_biankuang"
+            android:layout_width="100dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/art_money"
+                android:gravity="center"
+                android:src="@mipmap/ass_wechart"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/aply_wechat"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/art_money"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="微信"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/button_unlogin"
+        android:text="充值"
+        android:textColor="@color/white_text" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/withdrawals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/button_unlogin"
+        android:text="提现"
+        android:textColor="@color/white_text" />
+
+
+
+</LinearLayout>

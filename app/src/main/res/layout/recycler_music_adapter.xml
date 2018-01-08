@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:src="@mipmap/bootom_add_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_toRightOf="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="用户名"
+            android:id="@+id/apply_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+          />
+    </RelativeLayout>
+
+</LinearLayout>

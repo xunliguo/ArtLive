@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/cp_shadow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_mine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="@color/white_text"
+                android:visibility="visible"
+                android:id="@+id/me_nologin_layout"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.example.rh.artlive.view.CircleImageView
+                        android:id="@+id/roundImageView"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/home"
+                        />
+                    <TextView
+                        android:id="@+id/user"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/roundImageView"
+                        android:textColor="@color/black"
+                        android:text="二线潜力股"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/sex"
+                        android:text="女"
+                        android:layout_below="@+id/user"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/roundImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/user_school"
+                        android:text="北大附中学生"
+                        android:layout_below="@+id/user"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/me_item_unpaid_iv_arrow_right"
+                        style="@style/me_common_item_arrow_right_imageView_style" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/me_user_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:background="@drawable/white_quai_bg"
+                    android:id="@+id/me_item_unpaid_layout"
+                    style="@style/me_common_item_relativeLayout_style">
+
+                    <ImageView
+                        android:id="@+id/me_item_unpaid_iv_icon"
+                        style="@style/me_common_item_icon_imageView_style"
+                        android:src="@mipmap/mine_photo" />
+
+                    <TextView
+                        style="@style/me_common_item_title_textView_style"
+                        android:layout_toEndOf="@+id/me_item_unpaid_iv_icon"
+                        android:layout_toRightOf="@+id/me_item_unpaid_iv_icon"
+                        android:text="相册" />
+
+                    <ImageView
+                        android:id="@+id/me_item_unpaid_iv_arrow_right"
+                        style="@style/me_common_item_arrow_right_imageView_style" />
+                </RelativeLayout>
+
+                <View
+                    style="@style/me_horizontal_view_style"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+                <RelativeLayout
+                    android:id="@+id/me_item_lottery_layout"
+                    style="@style/me_common_item_relativeLayout_style">
+
+                    <ImageView
+                        android:id="@+id/me_item_lottery_iv_icon"
+                        style="@style/me_common_item_icon_imageView_style"
+                        android:src="@mipmap/mine_collect" />
+
+                    <TextView
+                        android:id="@+id/ourlease"
+                        style="@style/me_common_item_title_textView_style"
+                        android:layout_toRightOf="@+id/me_item_lottery_iv_icon"
+                        android:text="收藏" />
+
+                    <ImageView
+                        android:id="@+id/me_item_lottery_iv_arrow_right"
+                        style="@style/me_common_item_arrow_right_imageView_style" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/me_item_treasure_layout"
+                    style="@style/me_common_item_relativeLayout_style"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/me_item_treasure_iv_icon"
+                        style="@style/me_common_item_icon_imageView_style"
+                        android:src="@mipmap/mine_order" />
+
+                    <TextView
+                        style="@style/me_common_item_title_textView_style"
+                        android:layout_toRightOf="@+id/me_item_treasure_iv_icon"
+                        android:text="订单" />
+
+                    <ImageView
+                        android:id="@+id/me_item_treasure_iv_arrow_right"
+                        style="@style/me_common_item_arrow_right_imageView_style" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <View style="@style/me_horizontal_view_style"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/me_item_bankcard_layout"
+                style="@style/me_common_item_relativeLayout_style"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/me_item_bankcard_iv_icon"
+                    style="@style/me_common_item_icon_imageView_style"
+                    android:src="@mipmap/mine_money" />
+
+                <TextView
+                    style="@style/me_common_item_title_textView_style"
+                    android:layout_toRightOf="@+id/me_item_bankcard_iv_icon"
+                    android:text="资产"
+                    android:id="@+id/textView" />
+
+                <ImageView
+                    android:id="@+id/me_item_bankcard_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/promotion"
+                style="@style/me_common_item_relativeLayout_style"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/promotionview"
+                    style="@style/me_common_item_icon_imageView_style"
+                    android:src="@mipmap/mine_apply"
+                     />
+
+                <TextView
+                    style="@style/me_common_item_title_textView_style"
+                    android:layout_toRightOf="@+id/promotionview"
+                    android:text="申请入驻"
+                    android:id="@+id/promotiontextview" />
+
+                <ImageView
+                    android:id="@+id/promotionimageView"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+
+
+            </RelativeLayout>
+            <View style="@style/me_horizontal_view_style"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <RelativeLayout
+                android:id="@+id/me_item_coupons_layout"
+                style="@style/me_common_item_relativeLayout_style"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/me_item_coupons_iv_icon"
+                    style="@style/me_common_item_icon_imageView_style"
+                    android:src="@mipmap/mine_sister"
+                    />
+
+                <TextView
+                    style="@style/me_common_item_title_textView_style"
+                    android:layout_alignBottom="@+id/me_item_coupons_iv_arrow_right"
+                    android:layout_toEndOf="@+id/me_item_coupons_iv_icon"
+                    android:layout_toRightOf="@+id/me_item_coupons_iv_icon"
+                    android:text="成为师哥师姐"
+                    android:id="@+id/textView7" />
+
+                <ImageView
+                    android:id="@+id/me_item_coupons_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/me_item_qr_layout"
+                style="@style/me_common_item_relativeLayout_style">
+
+                <ImageView
+                    android:id="@+id/me_item_qr_iv_icon"
+                    style="@style/me_common_item_icon_imageView_style"
+                    android:src="@mipmap/mine_invate"
+                     />
+
+                <TextView
+                    style="@style/me_common_item_title_textView_style"
+                    android:layout_toRightOf="@+id/me_item_qr_iv_icon"
+                    android:text="邀请" />
+
+                <ImageView
+                    android:id="@+id/me_item_qr_iv_arrow_right"
+                    style="@style/me_common_item_arrow_right_imageView_style" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

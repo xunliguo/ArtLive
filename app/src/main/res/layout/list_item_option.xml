@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ 	android:paddingLeft="10dp"
+ 	android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/selected_back"
+        android:gravity="center_vertical"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:background="@drawable/layout_biankuang"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <CheckedTextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ctv_name"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="25sp" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_toRightOf="@+id/ctv_name"
+                android:id="@+id/tv_option"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:text="此处是选项描述" />
+
+            <ImageView
+                android:id="@+id/no_View"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

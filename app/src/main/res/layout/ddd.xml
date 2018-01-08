@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fun="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.example.rh.artlive.widget.HorizontalProgressBarWithNumber
+        android:id="@+id/hpbwn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        fun:progress_circle_color="#ff000000"
+        fun:progress_reached_bar_height="20dp"
+        fun:progress_reached_color="#FFFF4081"
+        fun:progress_text_color="#ffffffff"
+        fun:progress_text_size="14sp"
+        fun:progress_unreached_bar_height="20dp"
+        fun:progress_unreached_color="#ffBCB4E8" />
+
+</LinearLayout>

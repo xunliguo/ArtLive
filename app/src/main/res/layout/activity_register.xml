@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eff2f6"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/layout_header_register"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/network_tabLayout"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/yellow_back"
+        app:tabIndicatorColor="@color/yellow_back"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
+
+    <com.example.rh.artlive.view.CustomViewPager
+        android:layout_below="@+id/tab"
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

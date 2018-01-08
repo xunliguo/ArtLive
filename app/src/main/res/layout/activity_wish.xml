@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_wish"
+        android:id="@+id/top"/>
+
+    <ScrollView
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/login_btn"
+        android:layout_below="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/wishback" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="文曲星护法"
+                    android:textColor="@color/orange" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/view_teacher"
+                android:id="@+id/rv_sort"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_weight="1"
+                android:background="@color/white_back" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="天使护法"
+                    android:textColor="@color/orange" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/view_teacher"
+                android:id="@+id/rv_sort2"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_weight="1"
+                android:background="@color/white_back" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="鲜花护法"
+                    android:textColor="@color/orange" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/view_teacher"
+                android:id="@+id/rv_sort3"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_weight="1"
+                android:background="@color/white_back" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/password"
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_unlogin"
+        android:text="点我许愿"
+        android:textColor="@color/white_text" />
+
+</RelativeLayout>

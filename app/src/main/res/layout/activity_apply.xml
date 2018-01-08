@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_apply"
+        android:id="@+id/top"/>
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="真实姓名："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="用户名"
+            android:textColor="#2fa881"
+            android:id="@+id/apply_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/apply_two"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="所在地："
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/apply_area"
+            android:text="选择您目前所在地"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/name1"
+             />
+
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third"
+        android:layout_below="@+id/apply_two"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name2"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="状态："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="在读大学/研究生/已毕业"
+            android:layout_toRightOf="@+id/name2"
+            android:id="@+id/phone_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right1"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/four"
+        android:layout_below="@+id/third"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name3"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="学校："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_toRightOf="@+id/name3"
+            android:textSize="13sp"
+            android:hint="在读或毕业院校"
+            android:background="@null"
+            android:textColor="#2fa881"
+            android:id="@+id/apply_school"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/five"
+        android:layout_below="@+id/four"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name4"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="专业："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:textSize="13sp"
+            android:hint="在学校学习专业"
+            android:textColor="#2fa881"
+            android:id="@+id/apply_marj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name4"
+            android:layout_toEndOf="@+id/name4" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/six"
+        android:layout_below="@+id/five"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name5"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="教育方向："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="选择艺考专业培训方向"
+            android:layout_toRightOf="@+id/name5"
+            android:id="@+id/activity_test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right1"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/seven"
+        android:layout_below="@+id/six"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/name6"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="身份："
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="独立老师/机构老师/机构负责人/大学教授"
+            android:layout_toRightOf="@+id/name6"
+            android:id="@+id/ident"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right1"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@color/white_text"
+        android:id="@+id/setting"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/bottom_left_content"
+            android:id="@+id/button"
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/white_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="下一步（1/3）"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

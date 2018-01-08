@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_topic"/>
+
+
+    <RelativeLayout
+        android:id="@+id/header_school"
+        android:layout_below="@id/top"
+        android:background="@color/background_gray1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/searchmenu"
+            android:visibility="visible"
+            android:background="@drawable/school_draw"
+            android:layout_width="250dp"
+            android:layout_height="40dp">
+
+                <EditText
+                    android:textSize="13sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="            输入学校名字或拼音缩写"
+                    android:textColor="#2fa881"
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@null"
+                    android:paddingBottom="2dp"
+                    />
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/main_search"
+                android:layout_marginTop="5dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.example.rh.artlive.view.PullToRefreshLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/network_pager_myAuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.rh.artlive.view.LoadRecyclerView
+            android:id="@+id/network_myLoad"
+            android:background="@color/background_gray1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/load_more" />
+
+    </com.example.rh.artlive.view.PullToRefreshLayout>
+
+</LinearLayout>

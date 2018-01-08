@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/layout_header_photo"
+        android:id="@+id/top"/>
+
+    <com.example.rh.artlive.view.PullToRefreshLayout
+        android:id="@+id/network_pager_myAuto"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.rh.artlive.view.LoadRecyclerView
+            android:id="@+id/network_myLoad"
+            android:background="@color/background_gray1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/load_more" />
+
+    </com.example.rh.artlive.view.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/photo_bottom"
+        android:visibility="gone"
+        android:background="@color/white_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_marginLeft="50dp"
+            android:src="@mipmap/photo_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/photo_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_match_details"/>
+
+    <ScrollView
+        android:layout_above="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/match_header_image"
+            android:src="@mipmap/news"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@color/white_text"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/match_title"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/match_title_content"
+                android:text="dasdsadsadasdasd"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_below="@+id/match_title_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="25dp"
+                    android:id="@+id/match_details"
+                    android:layout_marginTop="10dp"
+                    android:text="dasdsadsadadasdsadasdsddsdsdsdfdsfsdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsdsdsdsdsdsdsdsdsdsdsdsddsadasdadadsaddsadasdasdasdasadasdasdasadasdasd"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/click_match"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:text="查看比赛详情"
+                    android:background="@drawable/button_unlogin"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/match_title"
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+        <RelativeLayout
+            android:id="@+id/shaonian"
+            android:background="@color/white_text"
+            android:layout_below="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/macth_image"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/match_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/orange"
+                android:layout_toRightOf="@+id/macth_image"
+                android:gravity="center"
+                android:text="少年中国梦组委会"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:id="@+id/kefu_image"
+                    android:src="@mipmap/match_kefu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/kefu_image"
+                    android:text="客服"
+                    android:textColor="@color/orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@+id/shaonian"
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/view_two"
+            android:id="@+id/match_time"
+            android:background="@color/white_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/match_left"
+                android:text="初赛"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/match_time_right"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/match_left"
+                android:text="初赛"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="10dp"
+
+                android:layout_below="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/baoming"
+                    android:text="报名限制："
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/match_xianzhi"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/baoming"
+                    android:text="初赛"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/match_xianzhi"
+                    android:textSize="12dp"
+                    android:id="@+id/baoming_end"
+                    android:text="报名截止："
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/match_day"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/baoming_end"
+                    android:text="初赛"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sign_up"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:gravity="center"
+                    android:id="@+id/kefu_image"
+                    android:src="@mipmap/match_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/kefu_image"
+                    android:text="我要报名"
+                    android:textColor="@color/orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/photo"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_below="@+id/match_time"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="比赛评委"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/count_value"
+                android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                android:text="8名"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_below="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/view4"
+            android:id="@+id/rv_sort"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@color/white_back" />
+
+
+        <RelativeLayout
+            android:id="@+id/dongtai"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_below="@+id/rv_sort"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="作品动态"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/sex_value"
+                android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                android:text="8名"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+        <View
+            android:id="@+id/view5"
+            android:layout_below="@+id/dongtai"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/view5"
+            android:id="@+id/rv_sort1"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:background="@color/white_back" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/match_news"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_below="@+id/rv_sort1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="新闻公告"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/new_value"
+                android:layout_toLeftOf="@+id/me_item_lottery_iv_arrow_right"
+                android:text="8名"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/view6"
+            android:layout_below="@+id/match_news"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cp_shadow"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/view6"
+            android:id="@+id/rv_sort2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white_back" />
+
+        <ImageView
+            android:layout_below="@+id/rv_sort2"
+            android:id="@+id/bottom_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

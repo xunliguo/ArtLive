@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view1"
+        android:id="@+id/content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+            <com.example.rh.artlive.view.RoundImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:src="@drawable/back"
+                zhy:borderRadius="10dp"
+                zhy:type="round" >
+            </com.example.rh.artlive.view.RoundImageView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/image"
+            android:background="@drawable/live_hot_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:maxLines="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="分类名称"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"/>
+            <View
+                android:id="@+id/view"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/tvCity"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:id="@+id/out_two"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/tvCityprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在播："
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/tvCityprice"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/tvCitypricevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="128.00元"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

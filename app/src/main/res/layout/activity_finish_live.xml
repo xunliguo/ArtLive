@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/text_gray1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="直播已结束"
+            android:textSize="20dp"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:gravity="center"
+            android:text="时长："
+            android:textColor="@color/white_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center"
+            android:text="虫币"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:text="虫币"
+            android:textColor="@color/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="获得总收益"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="实际总收益"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_below="@+id/password"
+            android:id="@+id/login_btn"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_live_finish"
+            android:text="提取到个人资产"
+            android:textColor="@color/white_text" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="12dp"
+            android:text="提示：若本次没有提取收益，收益将保留在账户中，下次直播后方可提取"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:gravity="center"
+            android:text="返回虫窝"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:text="分享直播"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

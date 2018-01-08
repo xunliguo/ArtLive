@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_add_exam"/>
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <EditText
+                android:id="@+id/edittext"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:hint="写下重要行程，以免耽误考试"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/apply_two"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_text">
+
+            <ImageView
+                android:id="@+id/name1"
+                android:src="@mipmap/exam_book"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                 />
+
+            <TextView
+                android:id="@+id/apply_area"
+                android:layout_marginLeft="20dp"
+                android:text="选择报考院校、专业和考点"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/name1"
+                />
+
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="60dp"
+            android:id="@+id/view"
+            android:layout_below="@+id/apply_two"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cp_shadow"/>
+        <RelativeLayout
+            android:id="@+id/date"
+            android:layout_below="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_text">
+
+            <ImageView
+                android:id="@+id/name1"
+                android:src="@mipmap/exam_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/apply_date"
+                android:text="日期"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/name1"
+                />
+
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="60dp"
+            android:id="@+id/view1"
+            android:layout_below="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cp_shadow"/>
+
+        <RelativeLayout
+            android:id="@+id/time"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_text">
+
+            <ImageView
+                android:id="@+id/name1"
+                android:src="@mipmap/exam_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/apply_time"
+                android:text="时间"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/name1"
+                />
+
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="60dp"
+            android:id="@+id/view3"
+            android:layout_below="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cp_shadow"/>
+        <RelativeLayout
+            android:id="@+id/one_day"
+            android:layout_below="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white_text">
+
+            <ImageView
+                android:id="@+id/name1"
+                android:src="@mipmap/exam_arlm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/apply_area"
+                android:text="1天"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/name1"
+                />
+
+            <ImageView
+                android:id="@+id/me_item_lottery_iv_arrow_right"
+                style="@style/me_common_item_arrow_right_imageView_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

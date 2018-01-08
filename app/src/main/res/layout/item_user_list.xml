@@ -1,0 +1,61 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout"
+    android:layout_width="130dp"
+    android:layout_height="165dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/wish_icon1"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/photo_delete"
+            android:layout_width="100dp"
+            android:layout_height="90dp" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/tea_user_image1"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:src="@drawable/home"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="老师"
+            android:id="@+id/teach_name_two"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/teach_name_two"
+            android:id="@+id/tv_sort"
+            android:text="详情达科技大菲"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/sex"
+            android:src="@mipmap/sex_woman"
+            android:layout_below="@+id/tv_sort"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+</LinearLayout>

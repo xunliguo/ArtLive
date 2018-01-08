@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/white_text"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/key_name"
+            android:scaleType="fitXY"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            />
+        <RelativeLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/key_url"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="测试22创造性大赛撒大声地撒打算打打打算大萨达所大所大所"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/key_url"
+                android:id="@+id/one"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/price"
+                    android:src="@mipmap/match_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="地    点："
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/price"
+                    android:id="@+id/priceValue"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/match_area"
+                    android:layout_toRightOf="@+id/priceValue"
+                    android:text="全国"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/one"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/price"
+                    android:src="@mipmap/match_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="时    间："
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/price"
+                    android:id="@+id/priceValue"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/match_time"
+                    android:layout_toRightOf="@+id/priceValue"
+                    android:text="全国"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/third"
+                android:layout_below="@+id/two"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/price"
+                    android:src="@mipmap/match_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="主办方："
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/price"
+                    android:id="@+id/priceValue"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/match_main"
+                    android:layout_toRightOf="@+id/priceValue"
+                    android:text="全国"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:id="@+id/four"
+                android:layout_below="@+id/third"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <ImageView
+                    android:id="@+id/price"
+                    android:src="@mipmap/match_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="报名费："
+                    android:gravity="center"
+                    android:layout_toRightOf="@+id/price"
+                    android:id="@+id/priceValue"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/match_fee"
+                    android:layout_toRightOf="@+id/priceValue"
+                    android:text="全国"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        border_thickness         设置边框的宽度
+        border_inside_color     设置内边框的颜色
+        border_outside_color     设置外边框的颜色
+        内外边框如果只设置一个的话，则认为只显示一个边框。
+     -->
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <attr name="iconSize" format="dimension"/>
+    <attr name="iconMargin" format="dimension"/>
+    <attr name="iconSrc" format="reference"/>
+    <attr name="iconLeft" format="reference"/>
+    <attr name="iconRight" format="reference"/>
+    <attr name="duration_max" format="integer"/>
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="iconLeft"/>
+        <attr name="iconRight"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="HorizontalProgressBarWithNumber">
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_circle_color" format="color" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+
+    <declare-styleable name="PercentProgressView">
+        <attr name="progress_color" format="color|reference"></attr>
+        <attr name="progress" format="integer|float"></attr>
+        <attr name="total" format="integer|float"></attr>
+        <attr name="total_color" format="color|reference"></attr>
+        <attr name="text_size" format="dimension"></attr>
+        <attr name="progress_height" format="dimension"></attr>
+        <attr name="text_offset" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="NoDataTipsWidget">
+        <attr name="android:text" />
+        <attr name="android:src" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingLayout">
+
+        <attr name="isFirstVisible" format="boolean"></attr>
+        <attr name="pageBackground" format="reference|color"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="QRCodeView">
+        <attr name="boxViewWidth" format="dimension"></attr>
+        <attr name="boxViewHeight" format="dimension"></attr>
+        <attr name="maskColor" format="color"></attr>
+        <attr name="boxViewCornerColor" format="color"></attr>
+        <attr name="boxViewBorderColor" format="color"></attr>
+        <attr name="boxViewCornerSize" format="dimension"></attr>
+        <attr name="boxViewCornerLength" format="dimension"></attr>
+        <attr name="boxViewCornerOffset" format="dimension"></attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/news_mine"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text">
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/news_one"
+            android:src="@mipmap/news_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/qwe"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/news_one"
+            android:src="@mipmap/news_first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_toRightOf="@+id/qwe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/news_mine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/news_mine_eva"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white_text">
+
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/news_otwo"
+            android:src="@mipmap/news_comm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_toRightOf="@+id/news_otwo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/news_mine_eva"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/news_mine_good"
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white_text">
+        <ImageView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/news_third"
+            android:src="@mipmap/news_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_toRightOf="@+id/news_third"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="赞"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/me_item_lottery_iv_arrow_right"
+            style="@style/me_common_item_arrow_right_imageView_style" />
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/news_mine_good"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

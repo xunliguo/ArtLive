@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/mainPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_menu"/>
+
+
+    <!--Tab中间切换的页面内容-->
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--底部导航栏-->
+    <LinearLayout
+        android:id="@+id/art_bottom"
+        android:visibility="visible"
+        android:background="@color/white_text"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <LinearLayout
+            android:id="@+id/art_home1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/art_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/home_click" />
+
+            <TextView
+                android:id="@+id/art_home_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="虫语"
+                android:textColor="#ed731b"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/art_news1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/art_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/news" />
+
+            <TextView
+                android:id="@+id/art_news_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消息"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/main_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bottom_add" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/art_worm1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/art_worm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/worm" />
+
+            <TextView
+                android:id="@+id/art_worm_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="虫窝"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/art_mine1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/art_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/mine" />
+
+            <TextView
+                android:id="@+id/art_mine_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

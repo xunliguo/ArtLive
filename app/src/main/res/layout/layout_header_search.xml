@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/adds"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:id="@+id/searchmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/class_img"
+            android:background="@drawable/draw"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/search" />
+
+            <EditText
+                android:id="@+id/login_quick_login_et_phoneNumber"
+                style="@style/pagesearch"
+                android:hint="在此搜索心仪的玩具"
+                android:inputType="textMultiLine"
+                android:maxLength="11" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/class_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="取消"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/payView"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:background="@color/white_text"
+                android:gravity="center"
+                android:text="购买"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/leaseView"
+                android:layout_width="55dp"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="租赁"
+                android:textColor="@color/black"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/showVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/showTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#eef2f6"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/showImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text=" "
+            android:textColor="@color/white_text"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/showDrawCount"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/showAlarmCount"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="-25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="99+"
+            android:textColor="#eef2f6"
+            android:textSize="8sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+</LinearLayout>

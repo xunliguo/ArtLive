@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cp_shadow"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="@color/blue"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="提交"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp">-->
+
+        <!--<TextView-->
+            <!--android:text="开始推流"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<CheckBox-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/start_live"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:checked="true"-->
+            <!--android:text=""-->
+            <!--style="@style/customCheckbox"-->
+            <!--&gt;</CheckBox>-->
+    <!--</RelativeLayout>-->
+    <!--<View-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_below="@+id/title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/cp_shadow"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="切换摄像"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/chese"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text=""
+            style="@style/customCheckbox"
+            ></CheckBox>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="开启录制"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text=""
+            style="@style/customCheckbox"
+            ></CheckBox>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="开启美颜"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/bulit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:text=""
+            style="@style/customCheckbox"
+            ></CheckBox>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/cp_shadow"/>
+
+
+</LinearLayout>

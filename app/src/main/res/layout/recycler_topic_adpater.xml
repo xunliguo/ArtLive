@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/user"
+        android:background="@color/white_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/roundImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home"
+            />
+        <RelativeLayout
+            android:id="@+id/topic_top"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/roundImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/topic_name"
+                android:text="将天文"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textSize="13dp"
+                android:id="@+id/teacher_marj"
+                android:text="将天文"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/topic_top"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/roundImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/topic_marj"
+                android:text="将天文"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_header_fab"/>
+
+    <com.example.rh.artlive.view.PullToRefreshLayout
+        android:id="@+id/network_pager_myAuto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.example.rh.artlive.view.LoadRecyclerView
+            android:id="@+id/network_myLoad"
+            android:background="@color/background_gray1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <include layout="@layout/load_more" />
+
+    </com.example.rh.artlive.view.PullToRefreshLayout>
+
+</LinearLayout>

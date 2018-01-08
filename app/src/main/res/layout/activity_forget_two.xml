@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_header_forget_two"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:src="@mipmap/forget_pass"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="请输入新密码"
+            android:textColor="#2fa881"
+            android:id="@+id/apply_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/selector_bg_edit"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/one"
+        android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:background="@color/white_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/name"
+            android:src="@mipmap/forget_pass"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:hint="请确认新密码"
+            android:textColor="#2fa881"
+            android:id="@+id/apply_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:background="@drawable/selector_bg_edit"
+            android:textCursorDrawable="@drawable/bg_input_cursor"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/name"
+            android:layout_toEndOf="@+id/name" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_unlogin"
+        android:text="提交"
+        android:textColor="@color/white_text" />
+
+</LinearLayout>

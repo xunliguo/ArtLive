@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text2">#333333</color>
+    <color name="image_view_btn_pressed_bgColor">#30000000</color>
+    <color name="cp_shadow">#AAEBEBEB</color>
+    <color name="clear">#00000000</color>
+    <color name="twoclear">#50000000</color>
+
+
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+    <color name="split_line">#11112233</color>
+    <color name="pickerview_bgColor_overlay">#60000000</color>
+
+
+
+
+
+
+
+
+
+
+
+    <color name="font_green_1">#ff09b058</color>
+    <color name="font_green_2">#ff34BD77</color>
+    <color name="font_green">#ff3bbd79</color>
+    <drawable name="font_green">#ff3bbd79</drawable>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#60000000</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#60000000</color>
+    <color name="result_view">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="qr_code_view_mask">#60000000</color>
+    <color name="qr_code_view_corner">#FF2A7C3B</color>
+    <color name="qr_code_view_border">#ffffffff</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+    <color name="app_bg">#fff7f7f7</color>
+
+
+    <color name="base_text_color_light">#909090</color>
+    <color name="base_loading_background">#f7f7f7</color>
+
+
+    <color name="grad">#ff3c3c3c</color>
+    <color name="bg_common_gray">#ffe2e2e2</color>
+    <color name="dialog">#eeeeee</color>
+
+
+
+    <!-- 黑色字体颜色 -->
+    <color name="font_color_dark">#000000</color>
+    <!-- 黑灰色字体颜色 -->
+    <color name="font_color_black">#444444</color>
+    <!-- 灰色字体颜色 -->
+    <color name="font_color_gray">#9A9A9A</color>
+    <color name="fontColorgray">#7c8fa7</color>
+
+    <color name="gray_bg">#F2F2F2</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="fontColor">#1f9bda</color>
+    <!--背景色-->
+    <color name="white_back">#ffffff</color>
+    <color name="gray_back">#f0f0f0</color>
+    <color name="black_back">#333333</color>
+    <color name="green_back">#333333</color>
+    <color name="yellow_back">#ed731b</color>
+    <color name="red_back">#ca151e</color>
+    <color name="light_black">#666666</color>
+    <color name="blue_back">#FF216F</color>
+    <color name="trans_white">#99ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="coupon">#dddddd</color>
+
+
+    <!--字体颜色-->
+    <color name="gray_text">#999999</color>
+    <color name="gray_">#eeeeee</color>
+    <color name="white_text">#ffffff</color>
+    <color name="green_text">#FF216F</color>
+    <color name="tr_white">#4Defefef</color>
+    <color name="black_text">#1e1d1d</color>
+    <color name="b_text">#1E1D1D</color>
+    <color name="blue_text">#ff2070</color>
+    <color name="blue_dark_text">#2C66AD</color>
+    <color name="red_text">#ff2070</color>
+    <color name="no_color">#00000000</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!--分界线颜色-->
+    <color name="line_color">#f0f0f0</color>
+    <color name="gray_line">#ffdddddd</color>
+    <color name="gray_tab_text">#f777</color>
+    <color name="gray_rb_text">#f444</color>
+    <color name="me_black">#1e1d1d</color>
+
+    <!--状态栏颜色-->
+    <color name="status_color">#ff5d5e</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+
+    <color name="color_00">#8A000000</color>
+    <!--第三方库的颜色-->
+
+    <color name="blue">#0068cf</color>
+    <color name="green">#90BB8A</color>
+    <color name="red">#EE0000</color>
+    <color name="love">#FF89AB</color>
+    <color name="yellow">#ff9402</color>
+    <color name="partTranslucent">#39000000</color>
+    <color name="main_color">#a42833</color>
+    <color name="main_color20">#33a42833</color>
+
+    <color name="grey">#808080</color>
+
+    <color name="tencent_tls_ui_white">#FFFFFF</color>
+    <color name="tencent_tls_ui_gray">#444444</color>
+    <color name="tencent_tls_ui_shadowgray">#CCCCCC</color>
+    <color name="tencent_tls_ui_deepgray">#777777</color>
+    <color name="tencent_tls_ui_countryCodeColor">#009900</color>
+    <color name="tencent_tls_ui_black">#000000</color>
+    <color name="tencent_tls_ui_titleBackground">#FFFFFF</color>
+    <color name="tencent_tls_ui_titleFontColor">#000000</color>
+    <color name="tencent_tls_ui_defaultButtonColor">#0099FF</color>
+    <color name="tencent_tls_ui_pressedButtonColor">#0066CC</color>
+    <color name="tencent_tls_ui_background">#EEEEEE</color>
+    <color name="tencent_tls_ui_transparent">#9000</color>
+
+
+
+
+    <color name="background">#F9F7F8</color>
+    <color name="background_gray1">#EBEBEB</color>
+    <color name="background_gray2">#E6E6E6</color>
+    <color name="background_gray3">#D4D4D4</color>
+    <color name="background_gray4">#EFEFF4</color>
+    <color name="line">#DDDDDD</color>
+    <color name="line_btn">#BBBBBB</color>
+    <color name="text_gray1">#777777</color>
+    <color name="text_gray2">#767676</color>
+    <color name="text_blue1">#1173CB</color>
+    <color name="text_blue2">#1173CA</color>
+    <color name="panel_black">#25272A</color>
+    <color name="btn_red">#D63F41</color>
+    <color name="btn_red_hover">#E8484B</color>
+    <color name="btn_blue">#0F73CB</color>
+    <color name="btn_blue_hover">#1E86E4</color>
+    <color name="btn_text">#FFFFFF</color>
+    <color name="btn_text_hover">#CCFFFFFF</color>
+    <color name="btn_live">#5F6164</color>
+    <color name="btn_live_press">#2F3134</color>
+    <!--蒙版-->
+    <color name="colorMask">#66000000</color>
+    <color name="dialog_btn_pressed_color">#efefef</color>
+    <color name="around_view_bg_color">#e2e2e2</color>
+    <color name="popwin_bg_color">#5000</color>
+    <color name="around_supplier_title_color">#5a5959</color>
+    <color name="around_supplier_title_selected_color">#39ac69</color>
+
+
+
+    <!--app主色调，背景色-->
+    <!--背景色-->
+    <color name="colorBackground">#F0F0F0</color>
+    <!--app主题色，应用于导航，按钮-->
+    <color name="colorTheme">#80407A</color>
+    <!--主题色激活态，如按钮高亮-->
+    <color name="colorThemeActive">#A15C9A</color>
+    <!--红色标签/提示-->
+    <color name="colorLabelRed">#FF447D</color>
+    <!--红色标签/提示高亮-->
+    <color name="colorLabelRedActive">#FF89AB</color>
+    <!--黄色色标签/提示-->
+    <color name="colorLabelYellow">#FFAE20</color>
+    <!--黄色色标签/提示高亮-->
+    <color name="colorLabelYellowActive">#FFCD35</color>
+    <!--黄色蒙版-->
+    <color name="colorLabelYellowMask">#4DFFAE20</color>
+    <!--红色-->
+    <color name="colorRed">#FF3333</color>
+    <!--文字白色-->
+    <color name="colorTextWhite">#FFFFFF</color>
+    <!--文字G1-->
+    <color name="colorTextG1">#CCCCCC</color>
+    <!--文字G2-->
+    <color name="colorTextG2">#999999</color>
+    <!--文字G3-->
+    <color name="colorTextG3">#666666</color>
+    <!--文字G4-->
+    <color name="colorTextG4">#333333</color>
+    <!--文字black-->
+    <color name="colorTextBlack">#000000</color>
+    <!--gray1-->
+    <color name="colorGray1">#F0F0F0</color>
+    <!--light gray-->
+    <color name="colorLightGray">#E6E6E6</color>
+    <!--gray2-->
+    <color name="colorGray2">#DCDCDC</color>
+    <!--gray3-->
+    <color name="colorGray3">#C8C8C8</color>
+    <!--gray4-->
+    <color name="colorGray4">#787878</color>
+    <!--gray5-->
+    <color name="colorGray5">#505050</color>
+    <!--gray6-->
+    <color name="colorGray6">#141414</color>
+
+
+    <color name="colorSendName">#9966cc</color>
+    <color name="colorSendName1">#FF3163</color>
+    <color name="colorSendName2">#973365</color>
+    <color name="colorSendName3">#006599</color>
+    <color name="colorSendName4">#D07E44</color>
+    <color name="colorSendName5">#97BC87</color>
+    <color name="colorSendName6">#FFAE1F</color>
+    <color name="colorSendName7">#FF437D</color>
+    <!--蒙版-->
+
+    <color name="widgets_general_row_pressed">#d9d9d9</color>
+    <color name="widgets_general_row_normal">#ffffff</color>
+    <color name="widgets_general_row_line">#e5e5e5</color>
+    <color name="general_background">#efeff4</color>
+    <color name="gray">#888888</color>
+    <color name="scan_bg">#7f000000</color>
+
+
+    <color name="circleindexview_out_gray">#99ffffff</color>
+    <color name="circleindexview_in_green">#53c41a</color>
+    <color name="circleindexview_in_white">#ffffff</color>
+
+
+    <color name="circleindexview_sub_gray">#c4c4c4</color>
+    <color name="circleindexview_main_text">#5b5b5b</color>
+    <color name="textColor_32">#ff323232</color>
+    <color name="gray01">#80666666</color>
+    <color name="title_bar_color">#ffffffff</color>
+
+    <!-- 登录界面 -->
+    <color name="orange">#ffff6900</color>
+    <color name="content_color">#ff687186</color>
+    <color name="city_item_bg">#f0f0f0</color>
+    <color name="app_yellow">#ffff4c06</color>
+    <color name="app_white">#fff1f1f2</color>
+    <color name="app_green">#ff1db9a7</color>
+    <color name="app_green_normal">#ff20c9b5</color>
+
+    <color name="login_unable_bg_green">#ff90e4da</color>
+    <color name="login_unable_bg">#ffcdced0</color>
+
+
+
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="btn_logout_normal">#d33f3f</color>
+    <color name="btn_logout_pressed">#DA5A4D</color>
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="common_bottom_bar_normal_bg">#2d2f31</color>
+    <color name="common_bottom_bar_selected_bg">#161718</color>
+    <color name="common_botton_bar_blue">#2ea7e0</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="btn_pressed_green_solid">#B6DA53</color>
+    <color name="divider_list">#d4d4d4</color>
+    <color name="top_bar_normal_bg">#000</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="bottom_bar_normal_bg">#2D2F31</color>
+    <color name="bottom_text_color_normal">#ffffff</color>
+    <color name="btn_white_normal">#f7f8f8</color>
+    <color name="btn_white_pressed">#b5b5b6</color>
+    <color name="btn_green_noraml">#68C270</color>
+    <color name="btn_green_pressed">#6FCD78</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="gray_pressed">#b5b5b6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+    <color name="black_deep">#FF000000</color>
+    <color name="btn_answer_pressed">#4ebcd3</color>
+    <color name="btn_answer_normal">#2dafa3</color>
+</resources>
